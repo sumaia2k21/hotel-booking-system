@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/',[indexcontroller::class,'main']);
+Route::get('/login',[indexcontroller::class,'login']);
+Route::get('/profilecreate',[indexcontroller::class,'profilecreate']);

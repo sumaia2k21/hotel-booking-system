@@ -10,4 +10,14 @@ class indexcontroller extends Controller
     {
         return view('index');
     }
+
+    public function login()
+    {
+        return view('customer.backend.layouts.login');
+    }
+
+    public function profilecreate()
+    {
+        return view('customer.backend.layouts.createprofile');
+    }
 }

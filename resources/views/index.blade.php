@@ -19,42 +19,11 @@ Author URL: http://w3layouts.com
   <body>
 <!--w3l-header-->
 
-<header class="w3l-header-nav">
-	<!--/nav-->
-	<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">
-				<img src="assets/images/hotels.png" alt="Your logo" style="height:35px;" /> Hotels</a>
-			<!-- if logo is image enable this   
-						<a class="navbar-brand" href="#index.html">
-							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-						</a> -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item @@about__active">
-						<a class="nav-link" href="about.html">About</a>
-					</li>
-					<li class="nav-item @@services__active">
-						<a class="nav-link" href="services.html">Services</a>
-					</li>
-					<li class="nav-item @@contact__active">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
-				<a href="#booking" class="ml-3 book btn btn-secondary btn-style">Book Now</a>
-			</div>
-		</div>
-	</nav>
-	<!--//nav-->
-</header>
+@include('backend.partials.header');
+
+
+
 <!-- //w3l-header -->
  <!-- main-slider -->
  <section class="w3l-main-slider" id="home">
@@ -66,7 +35,7 @@ Author URL: http://w3layouts.com
                          <div class="banner-info">
                              <div class="container">
                                  <div class="banner-info-bg">
-                                     <h5>Location is heavenly. Best to visit in week days to enjoy the peaceful beauty
+                                     <h5> Hotel Management System
                                      </h5>
                                      <a class="btn btn-style transparent-btn mt-sm-5 mt-4" href="services.html"> Our
                                          Services</a>
@@ -195,7 +164,7 @@ Author URL: http://w3layouts.com
 				<a href="about.html" class="btn btn-style btn-primary mt-sm-5 mt-4">Learn About Us</a>
 			</div>
 			<div class="col-lg-6 about-right position-relative mt-lg-0 mt-5">
-				<img src="{{url('/images/top.jpg')}}" alt="" class="img-fluid img-border mt-4" />
+				<img src="assets/images/top.jpg" alt="" class="img-fluid img-border mt-4" />
 				<img src="{{url('/images/bottom.jpg')}}" alt="" class="img-fluid position-absolute img-position" />
 			</div>
 		</div>
@@ -346,58 +315,7 @@ Author URL: http://w3layouts.com
 
 
 
-<section class="w3l-footer-29-main">
-  <div class="footer-29 py-5">
-    <div class="container py-lg-4">
-      <div class="row footer-top-29">
-        <div class="col-lg-3 col-md-6 col-sm-8 footer-list-29 footer-1">
-          <h6 class="footer-title-29">Contact Us</h6>
-          <ul>
-            <li>
-              <p><span class="fa fa-map-marker"></span> Luxury hotel, #32841 block, #221DRS Rental & Paid rooms
-                business, UK.</p>
-            </li>
-            <li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +(21)-255-999-8888</a></li>
-            <li><a href="mailto:hotels@mail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
-                hotels@mail.com</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-4 footer-list-29 footer-2 mt-sm-0 mt-5">
-
-          <ul>
-            <h6 class="footer-title-29">Useful Links</h6>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About hotels</a></li>
-            <li><a href="#blogposts"> Blog posts</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-5 footer-list-29 footer-3 mt-lg-0 mt-5">
-            <h6 class="footer-title-29">Latest from blog</h6>
-            <div class="footer-post mb-4">
-              <a href="#url">Work Passionately</a>
-              <p class="small"><span class="fa fa-clock-o"></span> March 9, 2020</p>
-            </div>
-            <div class="footer-post">
-              <a href="#url">Work Passionately without any hesitation</a>
-              <p class="small"><span class="fa fa-clock-o"></span> March 9, 2020</p>
-            </div>
-            
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
-          <h6 class="footer-title-29">Newsletter </h6>
-          <p>Enter your email and receive the latest news from us.
-           We'll never share your email address</p>
-
-          <form action="#" class="subscribe" method="post">
-            <input type="email" name="email" placeholder="Your Email Address" required="">
-            <button><span class="fa fa-envelope-o"></span></button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+@include('backend.partials.footer');
 
 
 
