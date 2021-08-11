@@ -18,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[indexcontroller::class,'main']);
 Route::get('/login',[indexcontroller::class,'login']);
 Route::get('/profilecreate',[indexcontroller::class,'profilecreate']);
+
+Route::post('/profile_create',[indexcontroller::class,'profile_create'])->name('profile_create');
