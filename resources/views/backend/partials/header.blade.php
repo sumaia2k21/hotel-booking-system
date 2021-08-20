@@ -23,16 +23,22 @@
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
 					<li class="nav-item @@about__active">
-						<a class="nav-link" href="about.html">About</a>
+						<a class="nav-link" href="about.html">About us</a>
 					</li>
 					<li class="nav-item @@services__active">
-						<a class="nav-link" href="services.html">Services</a>
+						<a class="nav-link" href="services.html">Rooms</a>
 					</li>
 					<li class="nav-item @@contact__active">
-						<a class="nav-link" href="contact.html">Contact</a>
+						<a class="nav-link" href="contact.html">Gallary</a>
+					</li>
+					<li class="nav-item @@services__active">
+						<a class="nav-link" href="services.html">Login</a>
+					</li>
+					<li class="nav-item @@contact__active">
+						<a class="nav-link" href="contact.html">Sign Up</a>
 					</li>
 				</ul>
-				<a href="{{url('/login')}}" class="ml-3 book btn btn-secondary btn-style">Book Now</a>
+				<a href="{{url('/booking')}}" class="ml-3 book btn btn-secondary btn-style">Book Now</a>
 				<a href="{{url('/login')}}" class="ml-3 book btn btn-secondary btn-style">login</a>
 
                 

@@ -1,7 +1,4 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,12 +6,17 @@ Author URL: http://w3layouts.com
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hotels a Hotels Category Responsive Web Template | Home : W3layouts</title>
+    <title>Hotels </title>
 
     <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
-
+     
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{url('/css/style-starter.css')}}">
+    <link rel="stylesheet" href="{{url('/css/book.css')}}">
+
+
+
+
   </head>
   <body>
 <!--w3l-header-->
@@ -97,57 +99,12 @@ Author URL: http://w3layouts.com
  <!-- /main-slider -->
 <section class="w3l-availability-form" id="booking">
     <!-- /w3l-availability-form-section -->
-    <div class="w3l-availability-form-main py-5">
-        <div class="container pt-lg-3 pb-lg-5">
-            <div class="forms-top">
-                <div class="form-right">
-                    <div class="form-inner-cont">
-                        <h3 class="title-small">Check Availability</h3>
-                        <form action="search-results.html" method="post" class="signin-form">
-                            <div class="row book-form">
-                                <div class="form-input col-md-4 col-sm-6 mt-3">
-                                    <label>Check-in Date</label>
-                                    <input type="date" name="" placeholder="Date" required="">
-                                </div>
-                                <div class="form-input col-md-4 col-sm-6 mt-3">
-                                    <label>Check-out Date</label>
-                                    <input type="date" name="" placeholder="Date" required="">
-                                </div>
-                                <div class="form-input col-md-4 col-sm-6 mt-3">
-                                    <label>Adults</label>
-                                    <select class="selectpicker">
-                                        <option>01</option>
-                                        <option>02</option>
-                                        <option>03</option>
-                                        <option>04</option>
-                                    </select>
+    
 
-                                </div>
-                                <div class="form-input col-md-4 col-sm-6 mt-3">
-                                    <label>Children</label>
-                                    <select class="selectpicker">
-                                        <option>01</option>
-                                        <option>02</option>
-                                        <option>03</option>
-                                        <option>04</option>
-                                    </select>
+@include('backend.partials.checkavailability')
 
-                                </div>
-                                <div class="form-input col-md-4 col-sm-6 mt-3">
-                                    <label>Price </label>
-                                    <input type="text" name="" placeholder="Max Price ($)" required />
-                                </div>
-                                <div class="bottom-btn col-md-4 col-sm-6 mt-3">
-                                    <label>Check availability </label>
-                                    <button class="btn btn-style btn-primary w-100 px-2">Check Availability</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
 </section>
 <!-- //w3l-availability-form-section -->
 <!-- about -->
@@ -170,135 +127,11 @@ Author URL: http://w3layouts.com
 		</div>
 	</div>
 </section>
-<!-- //about -->
-<div class="best-rooms py-5">
-    <div class="container py-lg-5 py-sm-4">
-        <h3 class="title-big text-center">Best Rooms</h3>
-        <div class="ban-content-inf row py-lg-3">
-            <div class="maghny-gd-1 col-lg-6">
-                <div class="maghny-grid">
-                    <figure class="effect-lily">
-                        <img class="img-fluid" src="{{url('/images/room1.jpg')}}" alt="">
-                        <figcaption class="w3set-hny">
-                            <div>
-                                <h4 class="top-text">Luxury Hotel and Best Resort
-                                    <span>Peaceful Place to stay</span></h4>
-                                <p>From 20$ </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="room-info">
-                        <h3 class="room-title"><a href="room-single.html">Luxury Hotel</a></h3>
-                        <ul class="mb-3">
-                            <li><span class="fa fa-users"></span> 2 Guests</li>
-                            <li><span class="fa fa-bed"></span> Double bed</li>
-                            <li><span class="fa fa-bed"></span> 15sqft</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A recusandae, illum sequi numquam
-                            tempora voluptates?</p>
-                        <a href="#book" class="btn btn-style btn-primary mt-sm-4 mt-3">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="maghny-gd-1 col-lg-6 mt-lg-0 mt-4">
-                <div class="row">
-                    <div class="maghny-gd-1 col-6">
-                        <div class="maghny-grid">
-                            <figure class="effect-lily border-radius">
-                                <img class="img-fluid" src="assets/images/room2.jpg" alt="" />
-                                <figcaption>
-                                    <div>
-                                        <h4>Family Rooms <span> Resort</span></h4>
-                                        <p>From 20$ </p>
-                                    </div>
 
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="maghny-gd-1 col-6">
-                        <div class="maghny-grid">
-                            <figure class="effect-lily border-radius">
-                                <img class="img-fluid" src="assets/images/room3.jpg" alt="" />
-                                <figcaption>
-                                    <div>
-                                        <h4>Double Rooms <span> Resort</span></h4>
-                                        <p>From 20$ </p>
-                                    </div>
+<h1 style="text-align:center">Welcome To Best Hotel</h1>
 
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="maghny-gd-1 col-6 mt-4">
-                        <div class="maghny-grid">
-                            <figure class="effect-lily border-radius">
-                                <img class="img-fluid" src="assets/images/room4.jpg" alt="" />
-                                <figcaption>
-                                    <div>
-                                        <h4>Luxury Rooms <span> Resort</span></h4>
-                                        <p>From 20$ </p>
-                                    </div>
 
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="maghny-gd-1 col-6 mt-4">
-                        <div class="maghny-grid">
-                            <figure class="effect-lily border-radius">
-                                <img class="img-fluid" src="assets/images/room5.jpg" alt="" />
-                                <figcaption>
-                                    <div>
-                                        <h4>Resort Rooms <span> Resort</span></h4>
-                                        <p>From 20$ </p>
-                                    </div>
 
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<section class="w3l-index3">
-    <div class="midd-w3 py-5">
-        <div class="container py-lg-5 py-md-3">
-            <div class="row">
-                <div class="col-lg-6 left-wthree-img text-righ">
-                    <div class="position-relative">
-                        <img src="assets/images/videobg.jpg" alt="" class="img-fluid" />
-                        <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">
-                            <span class="video-play-icon">
-                                <span class="fa fa-play"></span>
-                            </span>
-                        </a>
-                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                            <iframe src="https://player.vimeo.com/video/246941769" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-lg-0 mt-5 about-right-faq align-self">
-                    <h6>Discover our Locations</h6>
-                    <h3 class="title-big">20 Years of Hotels and Resort Experience</h3>
-                    <p class="mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                        ultrices in ligula. Semper at tempufddfel.</p>
-                    <ul class="w3l-right-book mt-4">
-                        <li><span class="fa fa-check" aria-hidden="true"></span>We make the best for all our customers</li>
-                        <li><span class="fa fa-check" aria-hidden="true"></span>Follow our Resort Luxury Hotels</li>
-                        <li><span class="fa fa-check" aria-hidden="true"></span>Luxury hotels and best resorts</li>
-                        <li><span class="fa fa-check" aria-hidden="true"></span>Double rooms and family rooms</li>
-                        <li><span class="fa fa-check" aria-hidden="true"></span>Enjoy a luxury experience</li>
-                    </ul>
-                    <a href="about.html" class="btn btn-style btn-primary mt-4">Check all packages</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <!-- quotation -->
 <div class="quotation py-5">
 	<div class="container py-xl-5 py-lg-3">
@@ -307,6 +140,7 @@ Author URL: http://w3layouts.com
 			<a href="booking.html" class="btn btn-style transparent-btn mt-sm-5 mt-4 mr-2">Book Now</a>
 			<a href="contact.html" class="btn btn-style btn-primary mt-sm-5 mt-4">Contact Us</a>
 		</div>
+        
 	</div>
 </div>
 <!-- //quotation -->
