@@ -28,7 +28,7 @@
 						
 						
 				</div>
-				@include('admin.backend.partials.footer')
+				<!-- @include('admin.backend.partials.footer') -->
 			</div>
 		</div>
 	</div>

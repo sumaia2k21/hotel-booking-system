@@ -74,21 +74,9 @@ Route::get('/room',[roomindexController ::class,'room'])->name('room');
 
 Route::get('/admin',[admincontroller::class,'Admin'])->name('admin');
 
-// Room catagory form start
-Route::get('/roomcatagory',[roomcatagorycontroller::class,'roomcatagory'])->name('roomcatagory');
-// Room catagory form end
 
-// Add facilities start
-Route::get('/addfacilities',[facilitiescontroller::class,'addfacilities'])->name('addfacilities');
-// Add facilities start end
 
-// Add newroom start
-Route::get('/add_room',[roomcontroller::class,'addroom'])->name('addroom');
 
-// Add facilities start end
-
-// contact us
-Route::get('/contact',[contact_uscontroller ::class,'contactus'])->name('contactus');
 
 
 // contact us end
@@ -112,6 +100,25 @@ Route::get('/master',[mastercontroller ::class,'master'])->name('master');
 
 //homepage
 Route::get('/home',[mastercontroller ::class,'home'])->name('home');
+// contact us
+Route::get('/contact',[mastercontroller ::class,'contact_us'])->name('contact_us');
+
+
+// Room catagory form start
+Route::get('/roomcatagory',[roomcatagorycontroller::class,'roomcatagory'])->name('roomcatagory');
+// Room catagory form end
+
+// Add facilities start
+Route::get('/addfacilities',[facilitiescontroller::class,'addfacilities'])->name('addfacilities');
+// Add facilities start end
+
+// Add newroom add start
+Route::get('/add_room',[roomcontroller::class,'addroom'])->name('addroom');
+
+//  start end
+
+//new booking
+Route::get('/new_booking',[mastercontroller ::class,'new_booking'])->name('new_booking');
 
 
 

@@ -16,7 +16,16 @@ class mastercontroller extends Controller
         
         return view('admin.backend.layouts.home');
     }
+    public function contact_us()
+    {
+        
+        return view('admin.backend.layouts.contact_us');
+    }
     
-
+    public function new_booking()
+    {
+        
+        return view('admin.backend.layouts.new_booking');
+    }
    
 }
